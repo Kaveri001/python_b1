@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fashion Model Responsive Show</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f3f3f3;
+    }
+
+    .model {
+      text-align: center;
+      font-size: 2rem;
+      padding: 40px;
+      background: white;
+      border: 2px solid #ccc;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hat, .scarf, .sunglasses {
+      display: none;
+    }
+
+    /* Desktop - show Hat */
+    @media (min-width: 1024px) {
+      .hat {
+        display: block;
+      }
+    }
+
+    /* Tablet - show Scarf */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .scarf {
+        display: block;
+      }
+    }
+
+    /* Mobile - show Sunglasses */
+    @media (max-width: 767px) {
+      .sunglasses {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="model">
+    <div class="hat">🎩 Hat</div>
+    <div class="scarf">🧣 Scarf</div>
+    <div class="sunglasses">🕶️ Sunglasses</div>
+  </div>
+
+</body>
+</html>

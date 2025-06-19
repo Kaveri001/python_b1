@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Inheritance Example</title>
+  <style>
+    .parent {
+      font-size: 18px;       /* Inherited */
+      color: darkgreen;      /* Inherited */
+      border: 2px solid black; /* NOT inherited */
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      margin-top: 10px;
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid gray;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <h2>This is an h2 heading</h2>
+    <p>This is a paragraph inside the parent div.</p>
+    <span>This is a span element.</span>
+
+    <table>
+      <tr>
+        <td>Table Cell 1</td>
+        <td>Table Cell 2</td>
+      </tr>
+      <tr>
+        <td>Table Cell 3</td>
+        <td>Table Cell 4</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <h3>🔍 Inherited Properties</h3>
+    <ul>
+      <li>font-size</li>
+      <li>color</li>
+      <li>line-height</li>
+    </ul>
+
+    <h3>🚫 Non-Inherited Properties</h3>
+    <ul>
+      <li>border</li>
+      <li>padding</li>
+      <li>margin</li>
+    </ul>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packing a Box</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: sans-serif;
+      background: #f0f0f0;
+    }
+
+    .box {
+      display: grid;
+      gap: 1rem;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+    }
+
+    .item {
+      background-color: #4f46e5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 6px;
+      font-size: 1.2rem;
+    }
+
+    /* Mobile: 1 column */
+    .box {
+      grid-template-columns: 1fr;
+    }
+
+    /* Tablet: 3 columns */
+    @media (min-width: 600px) {
+      .box {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    /* Desktop: 6 columns */
+    @media (min-width: 1024px) {
+      .box {
+        grid-template-columns: repeat(6, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+  </div>
+
+</body>
+</html>

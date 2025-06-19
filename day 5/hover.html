@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover to Power!</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+      font-family: sans-serif;
+    }
+
+    .magic-button {
+      padding: 1em 2em;
+      font-size: 1.2rem;
+      background-color: #6c5ce7;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .magic-button:hover {
+      background-color: #fd79a8;
+      font-size: 1.4rem;
+      transform: rotate(-3deg) scale(1.1);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="magic-button">Hover Me 🧨</button>
+
+</body>
+</html>

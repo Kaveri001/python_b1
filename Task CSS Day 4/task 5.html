@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Font Weight Demo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;900&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+
+    .default-question {
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+
+    .weights {
+      margin-bottom: 20px;
+    }
+
+    .normal { font-weight: normal; }
+    .bold { font-weight: bold; }
+    .lighter { font-weight: lighter; }
+    .bolder { font-weight: bolder; }
+    .w100 { font-weight: 100; font-family: 'Roboto', sans-serif; }
+    .w500 { font-weight: 500; font-family: 'Roboto', sans-serif; }
+    .w900 { font-weight: 900; font-family: 'Roboto', sans-serif; }
+
+    .label {
+      font-style: italic;
+      display: block;
+      margin-top: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="default-question">
+    <strong>Question:</strong> “What is the default font-weight in HTML?”
+    <br><em>Answer: 400 (normal)</em>
+  </div>
+
+  <div class="weights">
+    <span class="label">Normal (400 - system default):</span>
+    <p class="normal">This text uses normal font weight.</p>
+
+    <span class="label">Bold:</span>
+    <p class="bold">This text uses bold font weight.</p>
+
+    <span class="label">Lighter:</span>
+    <p class="lighter">This text uses lighter font weight.</p>
+
+    <span class="label">Bolder:</span>
+    <p class="bolder">This text uses bolder font weight.</p>
+
+    <span class="label">Font-weight: 100 (Roboto):</span>
+    <p class="w100">This text uses font-weight 100 with Roboto.</p>
+
+    <span class="label">Font-weight: 500 (Roboto):</span>
+    <p class="w500">This text uses font-weight 500 with Roboto.</p>
+
+    <span class="label">Font-weight: 900 (Roboto):</span>
+    <p class="w900">This text uses font-weight 900 with Roboto.</p>
+  </div>
+
+</body>
+</html>

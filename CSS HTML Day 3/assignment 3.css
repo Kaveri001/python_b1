@@ -1,0 +1,35 @@
+/* Common box styling */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  line-height: 110px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Box 1: Solid border */
+.box1 {
+  border: 4px solid #3f51b5;
+}
+
+/* Box 2: Dashed border */
+.box2 {
+  border: 5px dashed #ff9800;
+}
+
+/* Box 3: Dotted border */
+.box3 {
+  border: 3px dotted #009688;
+}
+
+/* Box 4: Double border with border-radius (circle) */
+.box4 {
+  width: 150px;
+  height: 150px;
+  border: 6px double #e91e63;
+  border-radius: 50%; /* Makes it circular */
+  background-color: #f8bbd0;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Child Gets a Candy</title>
+  <style>
+    ul li:first-child {
+      color: purple;
+      font-weight: bold;
+    }
+
+    ul li:first-child::before {
+      content: "🍬 ";
+    }
+  </style>
+</head>
+<body>
+  <h2>Who gets a candy?</h2>
+  <ul>
+    <li>Alex</li>
+    <li>Ben</li>
+    <li>Charlie</li>
+    <li>Diana</li>
+  </ul>
+</body>
+</html>

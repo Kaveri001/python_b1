@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Text Align Example</title>
+  <style>
+    h1 {
+      text-align: justify;
+    }
+
+    .paragraphs p:nth-child(1) {
+      text-align: left;
+    }
+
+    .paragraphs p:nth-child(2) {
+      text-align: center;
+    }
+
+    .paragraphs p:nth-child(3) {
+      text-align: right;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>This heading is justified. The text will be spaced out so that each line has equal width.</h1>
+
+  <div class="paragraphs">
+    <p>This paragraph is left aligned.</p>
+    <p>This paragraph is center aligned.</p>
+    <p>This paragraph is right aligned.</p>
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> “Justify” aligns text to both the left and right margins, adding space between words. “Center” aligns text only in the center without extra spacing between words.
+  </div>
+
+</body>
+</html>

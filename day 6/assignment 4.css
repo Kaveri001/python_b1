@@ -1,0 +1,46 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.mood-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: blue; /* Default: large screen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mood-container::after {
+  content: "Feeling Calm"; /* Default mood message */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Medium screens (tablet, ~768px to ~1024px) */
+@media (max-width: 1024px) and (min-width: 601px) {
+  .mood-container {
+    background-color: yellow;
+  }
+
+  .mood-container::after {
+    content: "Feeling Bright";
+    color: black;
+  }
+}
+
+/* Small screens (mobile, <= 600px) */
+@media (max-width: 600px) {
+  .mood-container {
+    background-color: red;
+  }
+
+  .mood-container::after {
+    content: "Feeling Bold";
+    color: white;
+  }
+}

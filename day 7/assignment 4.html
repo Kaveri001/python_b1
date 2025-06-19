@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crab Walk</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: #d0f0f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+
+    .crab {
+      width: 100px;
+      height: 60px;
+      background: tomato;
+      border-radius: 50% 50% 40% 40%;
+      position: relative;
+      animation: walk 3s infinite ease-in-out;
+    }
+
+    /* Claws */
+    .crab::before,
+    .crab::after {
+      content: "";
+      position: absolute;
+      top: -20px;
+      width: 30px;
+      height: 30px;
+      background: tomato;
+      border-radius: 50%;
+    }
+
+    .crab::before {
+      left: -25px;
+      transform: rotate(-30deg);
+    }
+
+    .crab::after {
+      right: -25px;
+      transform: rotate(30deg);
+    }
+
+    @keyframes walk {
+      0%   { transform: translateX(0) rotate(0deg); }
+      25%  { transform: translateX(-30px) rotate(-5deg); }
+      50%  { transform: translateX(0) rotate(0deg); }
+      75%  { transform: translateX(30px) rotate(5deg); }
+      100% { transform: translateX(0) rotate(0deg); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="crab 🦀"></div>
+
+</body>
+</html>
