@@ -1,0 +1,35 @@
+/* Common box styling */
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  line-height: 130px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Box with solid border */
+.box1 {
+  border: 4px solid #007BFF; /* Blue */
+}
+
+/* Box with dashed border */
+.box2 {
+  border: 6px dashed #28a745; /* Green */
+}
+
+/* Box with dotted border */
+.box3 {
+  border: 3px dotted #dc3545; /* Red */
+}
+
+/* Circular box using border-radius */
+.box4 {
+  width: 150px;
+  height: 150px;
+  border: 8px double #6f42c1; /* Purple */
+  border-radius: 50%;
+  line-height: 150px; /* Center vertically */
+}

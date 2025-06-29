@@ -1,0 +1,53 @@
+# Four Ways of Linking Files in HTML
+
+## 1. Linking External CSS File
+
+Use the `<link>` tag in the `<head>` to link an external CSS file.
+
+```html
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+---
+
+## 2. Linking External JavaScript File
+
+Use the `<script>` tag, typically before the closing `</body>` tag.
+
+```html
+<body>
+  <script src="script.js"></script>
+</body>
+```
+
+---
+
+## 3. Internal CSS
+
+Use the `<style>` tag within the `<head>` section to write CSS directly inside the HTML file.
+
+```html
+<head>
+  <style>
+    body {
+      background-color: lightblue;
+    }
+  </style>
+</head>
+```
+
+---
+
+## 4. Internal JavaScript
+
+Use the `<script>` tag directly in the HTML file to include JavaScript code.
+
+```html
+<body>
+  <script>
+    alert("Welcome to the site!");
+  </script>
+</body>
+```

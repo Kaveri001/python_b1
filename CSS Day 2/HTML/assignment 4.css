@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  padding: 40px;
+}
+
+/* Outer margin simulation */
+.margin-box {
+  margin: 30px;
+  background-color: transparent; /* to show the margin */
+}
+
+/* Card with border */
+.card {
+  border: 5px solid #333;
+  background-color: #fff;
+  padding: 0; /* padding will be inside padding-box */
+}
+
+/* Inner padding area */
+.padding-box {
+  padding: 20px;
+  background-color: #e0f7fa; /* Light blue to visualize padding */
+}
+
+/* Text content */
+.padding-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}

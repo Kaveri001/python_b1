@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.button-container {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+/* Common styles */
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #333;
+  background-color: #cce5ff;
+  margin: 5px;
+  font-weight: bold;
+}
+
+/* Specific display types */
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
